@@ -1,35 +1,41 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import "./App.css";
+import Footer from "./components/footer";
+import Logo from './assets/logo.svg?react';
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
+      <div className="topnav">
+        <a href="#">
+          <Logo />
         </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+        <div>
+          <a>About</a>
+          <a>Careers</a>
+          <a>Events</a>
+          <a>Products</a>
+          <a>Support</a>
+        </div>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
+      <div className="hero">
+        <h1>Immersive experiences that deliver</h1>
+      </div>
+      <div>
+        <h2>The leader in interactive VR</h2>
         <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
+          Founded in 2011, Loopstudios has been producing world-class virtual
+          reality projects for some of the best companies around the globe. Our
+          award-winning creations have transformed businesses through digital
+          experiences that bind to their brand.
         </p>
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <h2>Our creations</h2>
+      See all Deep earth Night arcade Soccer team VR The grid From up above VR
+      Pocket borealis The curiosity Make it fisheye About Careers Events
+      Products Support © 2021 Loopstudios. All rights reserved.
+      <Footer />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
