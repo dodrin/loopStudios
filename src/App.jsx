@@ -27,11 +27,11 @@ function App() {
     <>
       <div style={{ backgroundImage: `url(${mobileHero})` }}>
         {/* Top nav menu */}
-        <div className="topnav">
+        <div className="">
           <a href="#">
             <Logo />
           </a>
-          <div className="overflow-hidden hidden" ref={menuRef}>
+          <div className="bg-black overflow-hidden hidden " ref={menuRef}>
             <a>About</a>
             <a>Careers</a>
             <a>Events</a>
@@ -42,10 +42,11 @@ function App() {
             <Burger />
           </div>
         </div>
-        <div className="hero ">
-          <h1>Immersive experiences that deliver</h1>
+        <div className="hero">
+          <h1 class="text-white">Immersive experiences that deliver</h1>
         </div>
       </div>
+
       <div>
         <img src={interactive} alt="Person-wearing-VR-goggle" />
         <h2>The leader in interactive VR</h2>
