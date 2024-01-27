@@ -19,6 +19,12 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+h1,
+h2,
+h3 {
+  text-transform: uppercase;
+}
+
 body {
   margin: 0;
   min-width: 300px;

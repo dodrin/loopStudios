@@ -1,4 +1,4 @@
-export default function Attribution() {
+export const Attribution = () => {
   return (
     <footer className="attribution">
       Challenge by{" "}

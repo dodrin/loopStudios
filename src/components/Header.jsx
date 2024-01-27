@@ -3,7 +3,7 @@ import Burger from "../assets/icon-hamburger.svg?react";
 
 export const Header = ({ toggleMenu, Logo, menuRef, menu }) => {
   return (
-    <>
+    <header>
       {/* bg image section */}
       <div
         className="p-5 py-8"
@@ -33,12 +33,12 @@ export const Header = ({ toggleMenu, Logo, menuRef, menu }) => {
           </div>
         </div>
         <div className="hero">
-          <h1 className="text-white text-5xl border-2 border-white my-52 p-5 text-left">
-            {`Immersive experiences that deliver`.toUpperCase()}
+          <h1 className="text-white text-5xl border-2 border-white my-52 px-6 py-8 text-left">
+            Immersive experiences that deliver
           </h1>
         </div>
       </div>
       {/* bg image section end */}
-    </>
+    </header>
   );
 };

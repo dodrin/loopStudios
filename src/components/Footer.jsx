@@ -1,12 +1,9 @@
-import Logo from "../assets/logo.svg?react";
 import FacebookIcon from "../assets/icon-facebook.svg?react";
 import InstagramIcon from "../assets/icon-instagram.svg?react";
 import PinterestIcon from "../assets/icon-pinterest.svg?react";
 import TwitterIcon from "../assets/icon-twitter.svg?react";
 
-export default function Footer() {
-
-  const menu = ["About", "Careers", "Events", "Products", "Supoort"];
+export const Footer = ({ menu, Logo }) => {
 
   return (
     <footer className="footer flex flex-col items-center p-8 py-16">
