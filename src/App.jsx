@@ -2,16 +2,14 @@ import "./App.css";
 
 // SVG assets
 import Logo from "./assets/logo.svg?react";
-import FacebookIcon from "./assets/icon-facebook.svg?react";
-import InstagramIcon from "./assets/icon-instagram.svg?react";
-import PinterestIcon from "./assets/icon-pinterest.svg?react";
-import TwitterIcon from "./assets/icon-twitter.svg?react";
+
 import Burger from "./assets/icon-hamburger.svg?react";
 import interactive from "./assets/mobile/image-interactive.jpg";
 import mobileHero from "./assets/mobile/image-hero.jpg";
 
 import Attribution from "./components/Attribution";
 import { useRef } from "react";
+import Footer from "./components/footer";
 
 function App() {
   const menuRef = useRef(null);
@@ -23,59 +21,69 @@ function App() {
     }
   };
 
+  const menu = ["About", "Careers", "Events", "Products", "Supoort"];
+
   return (
     <>
-      <div style={{ backgroundImage: `url(${mobileHero})` }}>
+      {/* bg image section */}
+      <div
+        className="p-5 py-8"
+        style={{
+          backgroundImage: `url(${mobileHero})`,
+          backgroundRepeat: "no-repeat",
+          backgroundSize: "cover",
+        }}
+      >
         {/* Top nav menu */}
-        <div className="">
+        <div className="flex justify-between items-center">
           <a href="#">
-            <Logo />
+            <Logo alt="Loopstudios-logo" />
           </a>
-          <div className="bg-black overflow-hidden hidden " ref={menuRef}>
-            <a>About</a>
-            <a>Careers</a>
-            <a>Events</a>
-            <a>Products</a>
-            <a>Support</a>
+          <div
+            className="flex flex-col fixed top-0 left-0 w-screen bg-black overflow-hidden hidden"
+            ref={menuRef}
+          >
+            {menu.map((menuItem) => (
+              <a className="text-white text-3xl" key={menuItem}>
+                {menuItem.toUpperCase()}
+              </a>
+            ))}
           </div>
           <div className="buger" onClick={toggleMenu}>
-            <Burger />
+            <Burger alt="Menu-icon" />
           </div>
         </div>
         <div className="hero">
-          <h1 class="text-white">Immersive experiences that deliver</h1>
+          <h1 className="text-white text-5xl border-2 border-white my-52 p-5 text-left">
+            {`Immersive experiences that deliver`.toUpperCase()}
+          </h1>
         </div>
       </div>
+      {/* bg image section end */}
+      {/* The leader in interractive VR section */}
+      <div className="flex flex-col m-6 my-12">
+        <img
+          src={interactive}
+          alt="Person-wearing-VR-goggle"
+          className="my-10"
+        />
 
-      <div>
-        <img src={interactive} alt="Person-wearing-VR-goggle" />
-        <h2>The leader in interactive VR</h2>
-        <p>
-          Founded in 2011, Loopstudios has been producing world-class virtual
-          reality projects for some of the best companies around the globe. Our
-          award-winning creations have transformed businesses through digital
-          experiences that bind to their brand.
-        </p>
+        <div className="mx-3">
+          <h2 className="text-3xl">
+            {`The leader in interactive VR`.toUpperCase()}
+          </h2>
+          <p className="mx-7 my-3">
+            Founded in 2011, Loopstudios has been producing world-class virtual
+            reality projects for some of the best companies around the globe.
+            Our award-winning creations have transformed businesses through
+            digital experiences that bind to their brand.
+          </p>
+        </div>
       </div>
-      <h2>Our creations</h2>
+      <h2 className="text-3xl">{`Our creations`.toUpperCase()}</h2>
       See all Deep earth Night arcade Soccer team VR The grid From up above VR
       Pocket borealis The curiosity Make it fisheye
-      <footer className="footer">
-        <ul>
-          <li>About</li>
-          <li>Careers</li>
-          <li>Events</li>
-          <li>Products Support</li>
-        </ul>
-
-        <div>
-          <FacebookIcon alt="Facebook-icon" />
-          <TwitterIcon alt="Twitter-icon" />
-          <PinterestIcon alt="Pinterest-icon" />
-          <InstagramIcon alt="Instagram-icon" />
-        </div>
-        <p>© 2021 Loopstudios. All rights reserved.</p>
-      </footer>
+      <Footer />
       <Attribution />
     </>
   );
