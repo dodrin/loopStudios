@@ -10,7 +10,7 @@ export const Footer = ({ menu, Logo }) => {
       <Logo className="m-2" />
       <ul>
         {menu.map((menuItem) => (
-          <li className="my-5 cursor-pointer hover:text-stone-600 ease-in-out duration-300" key={menuItem}>{menuItem}</li>
+          <li className="my-5 cursor-pointer hover:text-stone-600 ease-in-out duration-300" key={menuItem.id}>{menuItem.title}</li>
         ))}
       </ul>
 

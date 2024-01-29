@@ -1,4 +1,4 @@
-import { creations } from "../constants/creations-mobile";
+import { creations } from "../constants/creationsMobile";
 
 export const Creation = () => {
   return (
