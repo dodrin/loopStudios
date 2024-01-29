@@ -50,6 +50,7 @@ export const Header = ({ toggleMenu, Logo, menu, isMenuOpen }) => {
           </div>
           {/* Mobile menu end */}
 
+          {/* Desktop Menu */}
           <div className="hidden md:flex">
             {menu.map((menuItem) => {
               const { id, title, link } = menuItem;
@@ -57,7 +58,7 @@ export const Header = ({ toggleMenu, Logo, menu, isMenuOpen }) => {
                 <div key={id}>
                   <a
                     href={link}
-                    className="mx-4 text-white text-2xl hover:text-black hover:border-b-2 border-black ease-in-out duration-300 "
+                    className="mx-4 text-white text-2xl hover:text-black hover:border-b-4 border-black ease-in-out duration-300 "
                     id="desktop-menu"
                   >
                     {title}
@@ -66,6 +67,7 @@ export const Header = ({ toggleMenu, Logo, menu, isMenuOpen }) => {
               );
             })}
           </div>
+          {/* Desktop menu end */}
         </div>
         <div className="hero md:mx-32 md:w-1/3">
           <h1 className="text-white text-5xl border-2 border-white my-52 px-4 py-6 text-left">
@@ -73,7 +75,7 @@ export const Header = ({ toggleMenu, Logo, menu, isMenuOpen }) => {
           </h1>
         </div>
       </div>
-      {/* bg image section end */}
+      
     </header>
   );
 };
