@@ -33,7 +33,7 @@ export const Header = ({ toggleMenu, Logo, menuRef, menu }) => {
           </div>
         </div>
         <div className="hero">
-          <h1 className="text-white text-5xl border-2 border-white my-52 px-6 py-8 text-left">
+          <h1 className="text-white text-5xl border-2 border-white my-52 px-4 py-6 text-left">
             Immersive experiences that deliver
           </h1>
         </div>
