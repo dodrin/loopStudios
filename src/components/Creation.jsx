@@ -3,7 +3,7 @@ import { creations } from "../constants/creations-mobile";
 export const Creation = () => {
   return (
     <section className="flex flex-col items-center m-5">
-      <h2 className="text-3xl">Our creations</h2>
+      <h2 className="text-3xl mb-5">Our creations</h2>
 
       {creations.map((card) => {
         const { id, image, title } = card;
