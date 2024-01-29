@@ -7,7 +7,7 @@ export const Footer = ({ menu, Logo }) => {
 
   return (
     <footer className="flex flex-col items-center p-8 py-16">
-      <Logo className="m-2" />
+      <Logo className="m-2 cursor-pointer" />
       <ul>
         {menu.map((menuItem) => (
           <li className="my-5 cursor-pointer hover:text-stone-600 ease-in-out duration-300" key={menuItem.id}>{menuItem.title}</li>

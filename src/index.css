@@ -38,6 +38,10 @@ p {
   color: var(--very-dark-gray);
 }
 
+#desktop-menu {
+  font-family: var(--heading-font);
+}
+
 .see-all {
   font-family: var(--heading-font);
   letter-spacing: 3px;
