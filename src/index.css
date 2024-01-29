@@ -34,7 +34,16 @@ body {
   font-family: var(--main-font);
 }
 
-.footer {
+p {
+  color: var(--very-dark-gray);
+}
+
+.see-all {
+  font-family: var(--heading-font);
+  letter-spacing: 3px;
+}
+
+footer {
   background-color: var(--black);
   color: var(--white);
   font-family: var(--heading-font);
