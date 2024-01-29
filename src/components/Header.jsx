@@ -21,7 +21,9 @@ export const Header = ({ toggleMenu, Logo, menu, isMenuOpen }) => {
           </a>
           <div
             className={`fixed top-0 left-0 w-screen h-full bg-black overflow-hidden transition-opacity duration-500 ease-in-out ${
-              isMenuOpen ? "opacity-100" : "opacity-0"
+              isMenuOpen
+                ? "opacity-100 pointer-events-auto"
+                : "opacity-0 pointer-events-none"
             }`}
           >
             <div className="flex justify-between items-center mx-5 my-8">
