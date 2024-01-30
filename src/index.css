@@ -38,9 +38,27 @@ p {
   color: var(--very-dark-gray);
 }
 
+#desktop-menu {
+  font-family: var(--heading-font);
+}
+
 .see-all {
   font-family: var(--heading-font);
   letter-spacing: 3px;
+}
+
+#creation-desktop {
+  display: none;
+}
+
+@media screen and (min-width: 700px) {
+  #creation-desktop {
+    display: block;
+  }
+
+  #creation-mobile {
+    display: none;
+  }
 }
 
 footer {

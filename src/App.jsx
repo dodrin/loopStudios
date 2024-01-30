@@ -4,27 +4,30 @@ import { Attribution } from "./components/Attribution";
 import { Header } from "./components/Header";
 import { Footer } from "./components/footer";
 import { Interactive } from "./components/Interactive";
-import { useRef } from "react";
+import { useState } from "react";
 import { Creation } from "./components/Creation";
+import { menu } from "./constants/navMenu";
+import { CreationsDesktop } from "./components/CreationDesktop";
 
 function App() {
-  const menuRef = useRef(null);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = () => {
-    if (menuRef.current) {
-      menuRef.current.style.display =
-        menuRef.current.style.display === "block" ? "none" : "block";
-    }
+    setIsMenuOpen(!isMenuOpen);
   };
-
-  const menu = ["About", "Careers", "Events", "Products", "Supoort"];
 
   return (
     <>
-      <Header toggleMenu={toggleMenu} Logo={Logo} menuRef={menuRef} menu={menu} />
+      <Header
+        toggleMenu={toggleMenu}
+        Logo={Logo}
+        menu={menu}
+        isMenuOpen={isMenuOpen}
+      />
       <Interactive />
       <Creation />
-      <Footer menu={menu} Logo={Logo}/>
+      <CreationsDesktop />
+      <Footer menu={menu} Logo={Logo} />
       <Attribution />
     </>
   );
