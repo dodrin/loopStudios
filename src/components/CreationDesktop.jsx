@@ -13,19 +13,19 @@ export const CreationsDesktop = () => {
         </div>
       </div>
 
-      <div className="grid grid-cols-4 gap-x-4 m-20 mb-32">
+      <div className="grid grid-cols-4 gap-x-6 m-20 mb-32">
         {creationsDesktop.map((card) => {
           const { id, image, title } = card;
           return (
             <article
               key={id}
-              className="relative my-3 custom-shadow cursor-pointer"
+              className="relative my-3 cursor-pointer"
             >
-              <div>
-                <img src={image} alt={`creation-card-${title}`} />
-                <div class="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/20"></div>
+              <div className="relative isolate overflow-hidden">
+                <img src={image} alt={`creation-card-${title}`} className="w-full"/>
+                <div className="absolute inset-0 bg-gradient-to-t from-zinc-900 via-zinc-900/10 transition duration-300 ease-in-out hover:via-zinc-900/50 hover:delay-300"></div>
               </div>
-              <h3 className="text-white text-2xl absolute bottom-0 pl-4 pb-4 w-36 text-left">
+              <h3 className="z-10 text-white text-2xl absolute bottom-0 pl-4 pb-4 w-36 text-left">
                 {title}
               </h3>
             </article>
