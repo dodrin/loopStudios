@@ -2,7 +2,7 @@ import "./App.css";
 import Logo from "./assets/logo.svg?react";
 import { Attribution } from "./components/Attribution";
 import { Header } from "./components/Header";
-import { Footer } from "./components/footer";
+import { Footer } from "./components/Bottom";
 import { Interactive } from "./components/Interactive";
 import { useState } from "react";
 import { Creation } from "./components/Creation";
