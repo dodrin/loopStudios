@@ -6,14 +6,14 @@ export const CreationsDesktop = () => {
       className="flex flex-col items-center m-5 md:pt-8"
       id="creation-desktop"
     >
-      <div className="flex items-center justify-between mx-20 my-10">
+      <div className="flex items-center justify-between mx-20 mt-10">
         <h2 className="text-3xl">Our creations</h2>
-        <div className="w-48 border-2 border-[#8c8c8c] p-2 my-2 mr-10 hover:bg-black hover:text-white ease-in-out duration-300">
+        <div className="w-48 border-2 border-[#8c8c8c] p-2 my-2 hover:bg-black hover:text-white ease-in-out duration-300">
           <h3 className="see-all text-l">See all</h3>
         </div>
       </div>
 
-      <div className="grid grid-cols-4 gap-x-6 m-20 mb-32">
+      <div className="grid grid-cols-4 gap-x-6 m-20 mt-10 mb-32">
         {creationsDesktop.map((card) => {
           const { id, image, title } = card;
           return (
