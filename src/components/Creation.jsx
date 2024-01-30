@@ -1,8 +1,10 @@
 import { creations } from "../constants/creationsMobile";
 
 export const Creation = () => {
+
+
   return (
-    <section className="flex flex-col items-center m-5">
+    <section className="flex flex-col items-center m-5 md:pt-8" id="creation-mobile">
       <h2 className="text-3xl mb-5">Our creations</h2>
 
       {creations.map((card) => {

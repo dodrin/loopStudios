@@ -47,6 +47,20 @@ p {
   letter-spacing: 3px;
 }
 
+#creation-desktop {
+  display: none;
+}
+
+@media screen and (min-width: 480px) {
+  #creation-desktop {
+    display: block;
+  }
+
+  #creation-mobile {
+    display: none;
+  }
+}
+
 footer {
   background-color: var(--black);
   color: var(--white);

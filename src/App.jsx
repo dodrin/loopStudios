@@ -7,6 +7,7 @@ import { Interactive } from "./components/Interactive";
 import { useState } from "react";
 import { Creation } from "./components/Creation";
 import { menu } from "./constants/navMenu";
+import { CreationsDesktop } from "./components/CreationDesktop";
 
 function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -25,6 +26,7 @@ function App() {
       />
       <Interactive />
       <Creation />
+      <CreationsDesktop />
       <Footer menu={menu} Logo={Logo} />
       <Attribution />
     </>

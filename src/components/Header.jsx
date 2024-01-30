@@ -45,7 +45,7 @@ export const Header = ({ toggleMenu, Logo, menu, isMenuOpen }) => {
             </div>
           </div>
 
-          <div className="sm:hidden" onClick={toggleMenu}>
+          <div className="md:hidden" onClick={toggleMenu}>
             <Burger alt="Menu-icon" />
           </div>
           {/* Mobile menu end */}
@@ -69,7 +69,7 @@ export const Header = ({ toggleMenu, Logo, menu, isMenuOpen }) => {
           </div>
           {/* Desktop menu end */}
         </div>
-        <div className="hero md:mx-32 md:w-1/3">
+        <div className="hero min-w-[330px] max-w-[480px] md:mx-32 md:w-1/3">
           <h1 className="text-white text-5xl border-2 border-white my-52 px-4 py-6 text-left">
             Immersive experiences that deliver
           </h1>
