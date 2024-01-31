@@ -10,7 +10,7 @@ export const Header = ({ toggleMenu, Logo, menu, isMenuOpen }) => {
         {/* Top nav menu */}
         <div className="flex justify-between items-center md:mx-8">
           <a href="#">
-            <Logo alt="Loopstudios-logo" className="cursor-pointer" />
+            <Logo className="cursor-pointer" />
           </a>
           {/*Mobile menu */}
           <div
@@ -21,7 +21,7 @@ export const Header = ({ toggleMenu, Logo, menu, isMenuOpen }) => {
             } md:hidden`}
           >
             <div className="flex justify-between items-center mx-5 my-8">
-              <Logo alt="Loopstudios-logo" className="cursor-pointer" />
+              <Logo className="cursor-pointer" />
               <CloseIcon
                 onClick={toggleMenu}
                 alt="close-icon"

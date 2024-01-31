@@ -26,9 +26,7 @@ export const Creation = () => {
         );
       })}
 
-      <div className="cursor-pointer border-2 border-[#8c8c8c] p-2 px-12 my-4 hover:bg-black hover:text-white ease-in-out duration-300">
-        <h3 className="see-all text-l ">See all</h3>
-      </div>
+      <button className="cursor-pointer see-all border-2 border-[#8c8c8c] m-4 p-2 px-12 hover:bg-black hover:text-white ease-in-out duration-300">See all</button>
     </section>
   );
 };
