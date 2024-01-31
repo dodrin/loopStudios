@@ -42,9 +42,10 @@ p {
   font-family: var(--heading-font);
 }
 
-.see-all {
+button.see-all {
   font-family: var(--heading-font);
   letter-spacing: 3px;
+  text-transform: uppercase;
 }
 
 #creation-desktop {
